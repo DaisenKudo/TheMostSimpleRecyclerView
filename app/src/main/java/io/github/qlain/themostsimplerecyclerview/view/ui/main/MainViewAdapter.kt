@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import io.github.qlain.themostsimplerecyclerview.R
 import io.github.qlain.themostsimplerecyclerview.model.ItemModel
-import io.github.qlain.themostsimplerecyclerview.model.MainViewHolder
 
 class MainViewAdapter(
     private val list: List<ItemModel>,
@@ -20,7 +19,9 @@ class MainViewAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val itemView: View = LayoutInflater.from(parent.context).inflate(R.layout.part_item_model, parent, false)
-        return MainViewHolder(itemView)
+        return MainViewHolder(
+            itemView
+        )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

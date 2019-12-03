@@ -1,4 +1,4 @@
-package io.github.qlain.themostsimplerecyclerview.model
+package io.github.qlain.themostsimplerecyclerview.view.ui.main
 
 import android.view.View
 import android.widget.TextView
